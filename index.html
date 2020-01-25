@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>KaartRacen</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" type="image/png" href="favicon.jpg"/>
+    </head>
+    <body>
+        <br>
+        <div class="acesdiv">
+            <div id="schuppen" class="aces schuppen card">
+                <p>&#x1F0A1</p> 
+            </div>
+            <br>
+            <div id="harten" class="aces harten card">
+                <p>&#x1F0B1</p> 
+            </div>
+            <br>
+            <div id="klaveren" class="aces klaveren card">
+                <p>&#x1F0D1</p> 
+            </div>
+            <br>
+            <div id="koeken" class="aces koeken card">
+                <p>&#x1F0C1</p> 
+            </div>
+        </div>
+        <div class="cardsInLength"></div>
+
+        <div class="deckField">
+            <div class="buttondiv">
+                <button id="clickme">Turn Card >></button>
+                <button class="restart">Restart Game</button>
+            </div>
+            <div id="deckFieldBack" class="card back">
+                <p>&#127136</p>
+            </div>
+            <div id="deckFieldCard" class="card">
+                <p>&#x1F0BF</p>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div id="modal-first" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <form id="amountOfStepsForm">
+                    <label for="steps">How long do you want the track to be? Enter a number between 1 and 15!</label>
+                    <input type="number" name="steps" id="steps" placeholder="1-15" min="1" max="15">
+                    <button id="setStepsButton">Play!</button >
+                </form>
+            </div>
+        </div>
+
+        <div id="modal-end" class="modal">
+            <div id="modal-end-content" class="modal-content">
+                <button class="restart">Restart Game</button>
+            </div>
+        </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
